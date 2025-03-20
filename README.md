@@ -1,9 +1,8 @@
-# Research bot
+# Custom deep research
 
-This is a simple example of a multi-agent research bot. To run it:
-
+To run it:
 ```bash
-python -m examples.research_bot.main
+python main.py
 ```
 
 ## Architecture
