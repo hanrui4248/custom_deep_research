@@ -11,14 +11,14 @@ INSTRUCTIONS = (
     "itself."
 )
 
-class WebSearchItem(BaseModel):
-    # reason: str
-    # "Your reasoning for why this search is important to the query."
-    search_result_summary: str
-    "The summary of the search result."
+# class WebSearchItem(BaseModel):
+#     # reason: str
+#     # "Your reasoning for why this search is important to the query."
+#     search_result_summary: str
+#     "The summary of the search result."
 
-    url: str
-    "The url of the search result."
+#     url: str
+#     "The url of the search result."
 
 
 search_agent = Agent(
@@ -26,5 +26,5 @@ search_agent = Agent(
     instructions=INSTRUCTIONS,
     tools=[WebSearchTool()],
     model_settings=ModelSettings(tool_choice="required"),
-    output_type=WebSearchItem,
+    #output_type=WebSearchItem,
 )
